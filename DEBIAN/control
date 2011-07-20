@@ -1,0 +1,13 @@
+Package: shtrict
+Version: 1.0.00
+Section: shells
+Priority: optional
+Architecture: all
+Essential: no
+Depends: libreadline (>= 6.2)
+Maintainer: Ronald Landheer-Cieslak <rlc@vlinder.ca>
+Provides: shtrict
+Installed-Size: 17992
+Description: A configurable restricted shell with minimalist command-completion
+.
+
