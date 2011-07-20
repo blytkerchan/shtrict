@@ -12,6 +12,8 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.*/
+INSTALL_PROGRAM=install
+bindir=usr/bin
 OBJECTS=main.o
 
 all : shtrict
@@ -22,4 +24,6 @@ shtrict : $(OBJECTS)
 %.o : %.c
 	gcc -g -Wall -Werror -std=c89 -c -o $@ $<
 
-
+install :
+	mkdir -p $(DESTDIR)/$(bindir) 
+	$(INSTALL_PROGRAM) shtrict $(DESTDIR)/$(bindir)/shtrict
