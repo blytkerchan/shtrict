@@ -41,16 +41,9 @@
 	"Usage: %s [-h] [-v] [-i <config-file>]\n"			\
 	"\t-h:\t\t\tdisplay this help and exit\n"			\
 	"\t-v:\t\t\tdisplay version info and exit\n"			\
-	"\t-i <config-file>:\tread configuration file\n"		\
-	"\n"								\
-	"Vlinder shtrict  Copyright (C) 2011  Ronald Landheer-Cieslak\n"\
-	"This program comes with ABSOLUTELY NO WARRANTY; see the GNU\n"	\
-	"General Public License, version 3, for details.\n"		\
-	"This is free software, and you are welcome to redistribute\n"	\
-	"it under the conditions of the GNU General Public License,\n"	\
-	"version 3.\n"
+	"\t-i <config-file>:\tread configuration file\n"
 #define SHTRICT_VERSIONTEXT						\
-	"Vlinder shtrict 1.0.00\n"					\
+	"shtrict 1.0.00\n"						\
 	"\n"								\
 	"Vlinder shtrict  Copyright (C) 2011  Ronald Landheer-Cieslak\n"\
 	"This program comes with ABSOLUTELY NO WARRANTY; see the GNU\n"	\

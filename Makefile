@@ -27,3 +27,6 @@ shtrict : $(OBJECTS)
 install :
 	mkdir -p $(DESTDIR)/$(bindir) 
 	$(INSTALL_PROGRAM) shtrict $(DESTDIR)/$(bindir)/shtrict
+
+debian/manpage.1 : shtrict
+	help2man -h -h -n "Very restricted shell" -s 1 -o debian/manpage.1 --no-discard-stderr -v -v -N ./shtrict

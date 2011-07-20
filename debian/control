@@ -1,0 +1,14 @@
+Source: shtrict
+Section: shells
+Priority: extra
+Maintainer: Ronald Landheer-Cieslak <rlc@vlinder.ca>
+Build-Depends: debhelper (>= 7.0.50~), libreadline-dev
+Standards-Version: 3.9.1
+Homepage: http://rlc.vlinder.ca
+#Vcs-Git: git://git.debian.org/collab-maint/shtrict.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/shtrict.git;a=summary
+
+Package: shtrict
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Very restricted shell
