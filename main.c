@@ -120,7 +120,7 @@ int readCommands(FILE *file)
 		&& (line[0] == '#' || line[0] == ';' || line[0] == 0))
 		{
 			/* skip this line - it's a comment */
-			state = comment__
+			state = comment__;
 		}
 		else
 		{ /* don't know yet */ }
