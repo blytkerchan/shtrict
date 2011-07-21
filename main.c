@@ -283,7 +283,7 @@ int main(int argc, char * argv[])
 	}
 	else
 	{
-		fprintf(stderr, "Failed to open %s: %d", cmds_filename, errno);
+		fprintf(stderr, "Failed to open %s: %d\n", cmds_filename, errno);
 		syslog(LOG_ERR, "Failed to open %s: %d", cmds_filename, errno);
 		exit(EXIT_FAILURE);
 	}
