@@ -12,3 +12,8 @@ Package: shtrict
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Very restricted shell
+ Vlinder shtrict is a very restricted shell that can be configured for the
+ commands it allows. By creating a file called /etc/shtrict/commands and
+ filling it with the necessary commands, *only* those commands will be 
+ available to the user. Additionally, everything the user tries is logged
+ to syslog.

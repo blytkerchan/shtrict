@@ -26,7 +26,11 @@ shtrict : $(OBJECTS)
 
 install :
 	mkdir -p $(DESTDIR)/$(bindir) 
+	mkdir -p $(DESTDIR)/usr/share/man/man1
+	mkdir -p $(DESTDIR)/usr/share/doc/shtrict/examples
 	$(INSTALL_PROGRAM) shtrict $(DESTDIR)/$(bindir)/shtrict
+	gzip -c -9 debian/shtrict.1 > $(DESTDIR)/usr/share/man/man1/shtrict.1.gz
+	gzip -c -9 commands.ex > $(DESTDIR)/usr/share/doc/shtrict/examples/commands.gz
 
 debian/manpage.1 : shtrict
 	help2man -h -h -n "Very restricted shell" -s 1 -o debian/manpage.1 --no-discard-stderr -v -v -N ./shtrict
